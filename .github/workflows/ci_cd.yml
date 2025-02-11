@@ -75,7 +75,7 @@ jobs:
       uses: docker/build-push-action@v4
       with:
         context: .
-        file: ./auto_flask_app/Dockerfile
+        file: ../auto_flask_app/Dockerfile
         push: true
         tags: ${{ secrets.DOCKER_USERNAME }}/flasktest-app:latest
 
