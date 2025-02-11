@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./auto_flask_app
+        working-directory: auto_flask_app
 
     steps:
     - name: Checkout code
@@ -28,7 +28,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./auto_flask_app
+        working-directory: auto_flask_app
 
     steps:
     - name: Checkout code
@@ -53,7 +53,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./auto_flask_app
+        working-directory: auto_flask_app
 
     steps:
     - name: Checkout code
