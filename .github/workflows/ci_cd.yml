@@ -24,7 +24,7 @@ jobs:
       uses: actions/checkout@v4
 
     - name: Build The Docker Image
-      run: docker build . --file Dockerfile --tag workflow-test:$(date +%s)
+      run: docker build . --file ./auto_flask_app/Dockerfile --tag workflow-test:$(date +%s)
 
   build-and-test:
     runs-on: ubuntu-latest
@@ -75,7 +75,7 @@ jobs:
       uses: docker/build-push-action@v4
       with:
         context: .
-        file: ../auto_flask_app/Dockerfile
+        file: ./auto_flask_app/Dockerfile
         push: true
         tags: ${{ secrets.DOCKER_USERNAME }}/flasktest-app:latest
 
