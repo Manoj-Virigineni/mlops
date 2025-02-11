@@ -3,11 +3,11 @@ name: CI/CD for Dockerized Flask App
 on:
   push:
     paths:
-      - './auto_flask_app/**'
+      - 'auto_flask_app/**'
     branches: [ main ]
   pull_request:
     paths:
-      - './auto_flask_app/**'
+      - 'auto_flask_app/**'
     branches: [ main ]
 
 jobs:
@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: auto_flask_app
+        working-directory: auto_flask_app/
 
     steps:
       - name: Checkout code
@@ -28,7 +28,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: auto_flask_app
+        working-directory: auto_flask_app/
 
     steps:
       - name: Checkout code
@@ -53,7 +53,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: auto_flask_app
+        working-directory: auto_flask_app/
 
     steps:
       - name: Checkout code
