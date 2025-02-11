@@ -17,7 +17,6 @@ jobs:
       run:
         working-directory: auto_flask_app
 
-
     steps:
         - name: Checkout code
         - uses: actions/checkout@v4
