@@ -3,11 +3,11 @@ name: CI/CD for Dockerized Flask App
 on:
   push:
     paths:
-      - 'auto_flask_app/**'
+      - './auto_flask_app/**'
     branches: [ main ]
   pull_request:
     paths:
-      - 'auto_flask_app/**'
+      - './auto_flask_app/**'
     branches: [ main ]
 
 jobs:
